@@ -1,4 +1,5 @@
 import os
 
-pwd  = os.system('pwd')
-print(pwd)
+os.system('echo 1234')
+os.system('echo pwd')
+
