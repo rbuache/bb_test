@@ -26,18 +26,39 @@ class Job():
       res = res + str(step) + "\n"
     return res
 x = {
-    "target" : "pc_job_spown",
-    "steps" : [
+    "jobs" : [
         {
-            "name" : "Print current path",
-            "cmd" : "pwd",
-            "type" : "shell"
+        "target" : "pc",
+        "name" : "job to do on pc 1",
+        "steps" : [
+            {
+                "name" : "Print current path",
+                "cmd" : "pwd",
+                "type" : "shell"
+            },
+            {
+                "name" : "Print current path 2",
+                "cmd" : "pwd",
+                "type" : "shell"
+            },
+        ]
         },
         {
-            "name" : "Print current path",
-            "cmd" : "pwd",
-            "type" : "shell"
-        },
+            "target" : "pc",
+            "name" : "job to do on pc 2",
+            "steps" : [
+                {
+                    "name" : "Print current path",
+                    "cmd" : "pwd",
+                    "type" : "shell"
+                },
+                {
+                    "name" : "Print current path 2",
+                    "cmd" : "pwd",
+                    "type" : "shell"
+                },
+            ]
+        }
     ]
 }
 
