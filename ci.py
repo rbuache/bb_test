@@ -64,5 +64,5 @@ x = {
 
 #print(Job())
 s1 = ShellStep("Print current path", "pwd", "pc")
-print(x)
+print(json.dumps(x))
 
