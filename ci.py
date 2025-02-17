@@ -5,7 +5,7 @@ class ShellStep():
   def __init__(self, name, cmd, target):
     self.name = name
     self.cmd = cmd
-    self.type = "shell"
+    self.type = "target"
     self.target = target
   def __str__(self):
      return json.dumps(self.__dict__) 
