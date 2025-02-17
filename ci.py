@@ -26,5 +26,7 @@ class Job():
       res = res + str(step) + "\n"
     return res
       
-print(Job())
+#print(Job())
+s1 = ShellStep("Print current path", "pwd", "pc")
+print(s1)
 
