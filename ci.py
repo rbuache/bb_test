@@ -29,6 +29,7 @@ x = {
     "jobs" : [
         {
         "target" : "pc_job_spown",
+        "wait" : "False",
         "name" : "job to do on pc 1",
         "steps" : [
             {
@@ -45,6 +46,7 @@ x = {
         },
         {
             "target" : "pc_job_spown",
+            "wait" : "False",
             "name" : "job to do on pc 2",
             "steps" : [
                 {
