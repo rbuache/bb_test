@@ -1,0 +1,10 @@
+filter:
+  files:
+    - *
+
+steps:
+  - name: prepare
+    shell-fail: echo "toto"
+
+  - name: test
+    shell: echo "titi"
