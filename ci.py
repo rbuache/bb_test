@@ -3,6 +3,6 @@ import os
 cmd1 = '{"name":"Print current path", "cmd":"pwd"}'
 cmd2 = '{"name":"print ci file", "cmd":"cat ci.py"}'
 
-a =421574
+a =421574asdf
 print(cmd1)
 print(cmd2)
