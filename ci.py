@@ -1,5 +1,7 @@
 import os
 
-os.system('echo cat ci.py')
-os.system('echo pwd')
+cmd1 = "{\"name\":\"Print current path\", \"cmd\":\"pwd\"}"
+cmd2 = "{\"name\":\"Print current path\", \"cmd\":\"cat ci.py\"}"
 
+print(cmd1)
+print(cmd2)
