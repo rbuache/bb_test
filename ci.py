@@ -25,8 +25,23 @@ class Job():
     for step in self.steps:
       res = res + str(step) + "\n"
     return res
-      
+x = {
+    "target" : "pc",
+    "steps" : [
+        {
+            "name" : "Print current path",
+            "cmd" : "pwd",
+            "type" : "shell"
+        },
+        {
+            "name" : "Print current path",
+            "cmd" : "pwd",
+            "type" : "shell"
+        },
+    ]
+}
+
 #print(Job())
 s1 = ShellStep("Print current path", "pwd", "pc")
-print(s1)
+print(x)
 
