@@ -26,7 +26,7 @@ class Job():
       res = res + str(step) + "\n"
     return res
 x = {
-    "target" : "pc",
+    "target" : "pc_job_spown",
     "steps" : [
         {
             "name" : "Print current path",
