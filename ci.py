@@ -11,5 +11,45 @@ class ShellStep():
 s1 = ShellStep("Print current path", "pwd")
 s2 = ShellStep("print ci file", "cat ci.py")
 
-print(s1)
-print(s2)
+x = {
+    "jobs" : [
+        {
+        "target" : "pc_job_spown",
+        "wait" : "False",
+        "name" : "job to do on pc 1",
+        "steps" : [
+            {
+                "name" : "Print current path",
+                "cmd" : "pwd",
+                "type" : "shell"
+            },
+            {
+                "name" : "Print current path 2",
+                "cmd" : "pwd",
+                "type" : "shell"
+            },
+        ]
+        },
+        {
+            "target" : "pc_job_spown",
+            "wait" : "False",
+            "name" : "job to do on pc 2",
+            "steps" : [
+                {
+                    "name" : "Print current path",
+                    "cmd" : "pwd",
+                    "type" : "shell"
+                },
+                {
+                    "name" : "Print current path 2",
+                    "cmd" : "pwd",
+                    "type" : "shell"
+                },
+            ]
+        }
+    ]
+}
+
+#print(Job())
+s1 = ShellStep("Print current path", "pwd", "pc")
+print(json.dumps(x))
