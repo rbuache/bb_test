@@ -45,6 +45,11 @@ x = {
                     "cmd" : "pwd",
                     "type" : "shell"
                 },
+                {
+                    "name" : "print readme",
+                    "cmd" : "cat README.md",
+                    "type" : "shell"
+                },
             ]
         }
     ]
