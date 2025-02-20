@@ -6,7 +6,3 @@ sdfg
 asdf
 156
 gdfgeragrea
-asdf
-asdgfdsg
-fdsg
-asdf
